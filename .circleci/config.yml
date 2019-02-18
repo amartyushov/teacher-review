@@ -17,3 +17,5 @@ jobs:
     steps:
       - checkout
       - run: gradle clean test
+      - store_test_results:
+          path: test-results
