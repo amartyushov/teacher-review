@@ -15,5 +15,10 @@ public class WorktrackApplicationTests {
 	public void assertContextLoads() {
 		assertThat(true).isTrue();
 	}
-
+	
+	
+	@Test
+	public void assertFakeTest() {
+		assertThat(true).isFalse();
+	}
 }
