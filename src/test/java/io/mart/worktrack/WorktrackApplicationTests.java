@@ -10,7 +10,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class WorktrackApplicationTests {
 
 	@Test
-	public void contextLoads() {
+	public void assertContextLoads() {
+		// The body is empty intentionally
 	}
 
 }
