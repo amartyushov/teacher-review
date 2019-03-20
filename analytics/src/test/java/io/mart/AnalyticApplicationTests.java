@@ -15,5 +15,10 @@ public class AnalyticApplicationTests {
 	public void assertContextLoads() {
 		assertThat(true).isTrue();
 	}
-
+	
+	
+	@Test
+	public void newTest() {
+		assertThat(true).isFalse();
+	}
 }
