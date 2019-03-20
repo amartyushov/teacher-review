@@ -1,0 +1,24 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.3.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'jacoco'
+
+group = 'io.mart'
+sourceCompatibility = '1.8'
+
+dependencies {
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+jacocoTestReport {
+	reports {
+		//noinspection GroovyAssignabilityCheck
+		xml.enabled true
+		//noinspection GroovyAssignabilityCheck
+		html.enabled false
+	}
+}

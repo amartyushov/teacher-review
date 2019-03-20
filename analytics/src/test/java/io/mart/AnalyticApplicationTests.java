@@ -1,4 +1,4 @@
-package io.mart.worktrack;
+package io.mart;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,11 +9,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class WorktrackApplicationTests {
+public class AnalyticApplicationTests {
 
 	@Test
 	public void assertContextLoads() {
 		assertThat(true).isTrue();
 	}
-
+	
 }
