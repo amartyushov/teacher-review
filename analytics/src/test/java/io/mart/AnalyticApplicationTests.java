@@ -16,9 +16,4 @@ public class AnalyticApplicationTests {
 		assertThat(true).isTrue();
 	}
 	
-	
-	@Test
-	public void newTest() {
-		assertThat(true).isFalse();
-	}
 }
