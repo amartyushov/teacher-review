@@ -1,7 +1,7 @@
 package io.mart.repository;
 
-import io.mart.model.Teacher;
+import io.mart.model.TeacherDto;
 
-public interface TeacherRepository extends Repository<Teacher, Long> {
+public interface TeacherRepository extends Repository<TeacherDto, Long> {
 
 }

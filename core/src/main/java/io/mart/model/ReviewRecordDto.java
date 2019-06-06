@@ -1,19 +1,19 @@
 package io.mart.model;
 
-public class ReviewRecord {
+public class ReviewRecordDto {
 	
-	private Teacher teacher;
+	private TeacherDto teacher;
 	private Rating rating;
 	private String pros;
 	private String cons;
 	
 	
-	public Teacher getTeacher() {
+	public TeacherDto getTeacher() {
 		return teacher;
 	}
 	
 	
-	public ReviewRecord setTeacher(Teacher teacher) {
+	public ReviewRecordDto setTeacher(TeacherDto teacher) {
 		this.teacher = teacher;
 		return this;
 	}
@@ -24,7 +24,7 @@ public class ReviewRecord {
 	}
 	
 	
-	public ReviewRecord setRating(Rating rating) {
+	public ReviewRecordDto setRating(Rating rating) {
 		this.rating = rating;
 		return this;
 	}
@@ -35,7 +35,7 @@ public class ReviewRecord {
 	}
 	
 	
-	public ReviewRecord setPros(String pros) {
+	public ReviewRecordDto setPros(String pros) {
 		this.pros = pros;
 		return this;
 	}
@@ -46,7 +46,7 @@ public class ReviewRecord {
 	}
 	
 	
-	public ReviewRecord setCons(String cons) {
+	public ReviewRecordDto setCons(String cons) {
 		this.cons = cons;
 		return this;
 	}

@@ -1,6 +1,6 @@
 package io.mart.service;
 
-import io.mart.model.Teacher;
+import io.mart.model.TeacherDto;
 import io.mart.repository.TeacherRepository;
 
 public class TeacherServiceImpl implements TeacherService {
@@ -14,19 +14,19 @@ public class TeacherServiceImpl implements TeacherService {
 	
 	
 	@Override
-	public Teacher create(Teacher teacher) {
+	public TeacherDto create(TeacherDto teacher) {
 		return teacherRepository.create(teacher);
 	}
 	
 	
 	@Override
-	public Teacher update(Teacher teacher) {
+	public TeacherDto update(TeacherDto teacher) {
 		return teacherRepository.update(teacher);
 	}
 	
 	
 	@Override
-	public Teacher read(Long id) {
+	public TeacherDto read(Long id) {
 		return teacherRepository.read(id);
 	}
 	

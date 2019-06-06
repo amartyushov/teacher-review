@@ -1,7 +1,7 @@
 package io.mart.service;
 
-import io.mart.model.Teacher;
+import io.mart.model.TeacherDto;
 
-interface TeacherService extends CRUDService<Teacher, Long> {
+interface TeacherService extends CRUDService<TeacherDto, Long> {
 
 }

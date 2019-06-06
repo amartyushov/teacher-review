@@ -1,6 +1,6 @@
 package io.mart.service;
 
-import io.mart.model.Teacher;
+import io.mart.model.TeacherDto;
 import io.mart.repository.TeacherRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,13 +19,13 @@ public class TeacherServiceImplTest {
 	@Test
 	public void create_returnsTeacher() {
 		// Arrange
-		Teacher teacher = new Teacher();
+		TeacherDto teacher = new TeacherDto();
 		TeacherRepository teacherRepository = Mockito.mock(TeacherRepository.class);
 		when(teacherRepository.create(any())).thenReturn(teacher);
 		
 		//Act
 		TeacherServiceImpl teacherService = new TeacherServiceImpl(teacherRepository);
-		Teacher createdTeacher = teacherService.create(teacher);
+		TeacherDto createdTeacher = teacherService.create(teacher);
 		
 		//Assert
 		assertThat(createdTeacher).isEqualTo(teacher);
@@ -35,15 +35,15 @@ public class TeacherServiceImplTest {
 	@Test
 	public void update_returnsTeacher() {
 		// Arrange
-		Teacher teacher = new Teacher();
-		Teacher updatedTeacher = new Teacher().setLastName("updated");
+		TeacherDto teacher = new TeacherDto();
+		TeacherDto updatedTeacher = new TeacherDto().setLastName("updated");
 		
 		TeacherRepository teacherRepository = Mockito.mock(TeacherRepository.class);
 		when(teacherRepository.update(any())).thenReturn(updatedTeacher);
 		
 		//Act
 		TeacherServiceImpl teacherService = new TeacherServiceImpl(teacherRepository);
-		Teacher receivedTeacher = teacherService.update(teacher);
+		TeacherDto receivedTeacher = teacherService.update(teacher);
 		
 		//Assert
 		assertThat(receivedTeacher).isEqualTo(updatedTeacher);
@@ -54,14 +54,14 @@ public class TeacherServiceImplTest {
 	public void read_returnsTeacher() {
 		// Arrange
 		long id = 1L;
-		Teacher teacher = new Teacher().setId(id).setName("first");
+		TeacherDto teacher = new TeacherDto().setId(id).setFirstName("first");
 		
 		TeacherRepository teacherRepository = Mockito.mock(TeacherRepository.class);
 		when(teacherRepository.read(id)).thenReturn(teacher);
 		
 		//Act
 		TeacherServiceImpl teacherService = new TeacherServiceImpl(teacherRepository);
-		Teacher receivedTeacher = teacherService.read(id);
+		TeacherDto receivedTeacher = teacherService.read(id);
 		
 		//Assert
 		assertThat(receivedTeacher).isEqualTo(teacher);

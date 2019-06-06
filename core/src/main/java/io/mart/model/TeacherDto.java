@@ -2,7 +2,7 @@ package io.mart.model;
 
 import java.util.Date;
 
-public class Teacher {
+public class TeacherDto {
 	
 	private Long id;
 	
@@ -17,7 +17,7 @@ public class Teacher {
 	}
 	
 	
-	public Teacher setFirstName(String firstName) {
+	public TeacherDto setFirstName(String firstName) {
 		this.firstName = firstName;
 		return this;
 	}
@@ -28,7 +28,7 @@ public class Teacher {
 	}
 	
 	
-	public Teacher setLastName(String lastName) {
+	public TeacherDto setLastName(String lastName) {
 		this.lastName = lastName;
 		return this;
 	}
@@ -39,7 +39,7 @@ public class Teacher {
 	}
 	
 	
-	public Teacher setDateOfBirth(Date dateOfBirth) {
+	public TeacherDto setDateOfBirth(Date dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 		return this;
 	}
@@ -50,7 +50,7 @@ public class Teacher {
 	}
 	
 	
-	public Teacher setId(Long id) {
+	public TeacherDto setId(Long id) {
 		this.id = id;
 		return this;
 	}
