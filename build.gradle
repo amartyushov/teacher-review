@@ -2,6 +2,11 @@ plugins {
 	id 'org.springframework.boot' version '2.1.4.RELEASE'
 }
 
+ext {
+	JUnit5Version = '5.3.1'
+	MockitoVersion = '2.27.0'
+}
+
 subprojects {
 	apply plugin: 'java'
 	apply plugin: 'org.springframework.boot'
@@ -14,7 +19,10 @@ subprojects {
 
 	dependencies {
 		compile 'org.springframework.boot:spring-boot-starter-web'
-		testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+		testImplementation('org.springframework.boot:spring-boot-starter-test')
+		testCompile group: 'org.mockito', name: 'mockito-core', version: "${MockitoVersion}"
+
 	}
 
 	sourceCompatibility = '1.8'
@@ -30,4 +38,11 @@ subprojects {
 
 	group = 'io.mart'
 	version = '1.0-SNAPSHOT'
+
+	test {
+		useJUnit()
+		testLogging {
+			events "passed", "skipped", "failed"
+		}
+	}
 }

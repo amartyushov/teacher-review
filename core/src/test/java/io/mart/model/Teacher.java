@@ -1,24 +1,22 @@
 package io.mart.model;
 
-import java.util.Date;
-
 public class Teacher {
 	
 	private Long id;
-	
-	private String firstName;
+	private String name;
 	private String lastName;
 	
-	private Date dateOfBirth;
+	private Integer age;
+	private String subject;
 	
 	
-	public String getFirstName() {
-		return firstName;
+	public String getName() {
+		return name;
 	}
 	
 	
-	public Teacher setFirstName(String firstName) {
-		this.firstName = firstName;
+	public Teacher setName(String name) {
+		this.name = name;
 		return this;
 	}
 	
@@ -34,13 +32,24 @@ public class Teacher {
 	}
 	
 	
-	public Date getDateOfBirth() {
-		return dateOfBirth;
+	public Integer getAge() {
+		return age;
 	}
 	
 	
-	public Teacher setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
+	public Teacher setAge(Integer age) {
+		this.age = age;
+		return this;
+	}
+	
+	
+	public String getSubject() {
+		return subject;
+	}
+	
+	
+	public Teacher setSubject(String subject) {
+		this.subject = subject;
 		return this;
 	}
 	
