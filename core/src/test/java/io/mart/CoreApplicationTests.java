@@ -6,10 +6,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
-class CoreApplicationTests {
+public class CoreApplicationTests {
 
 	@Test
-	void assertContextLoads() {
+	public void assertContextLoads() {
 		assertThat(true).isTrue();
 	}
 
