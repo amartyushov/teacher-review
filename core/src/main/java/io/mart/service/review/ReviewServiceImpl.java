@@ -33,6 +33,6 @@ public class ReviewServiceImpl implements ReviewService {
 	
 	@Override
 	public void delete(Long id) {
-	
+		reviewRepository.delete(id);
 	}
 }
