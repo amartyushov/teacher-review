@@ -6,6 +6,7 @@ public class ReviewRecordDto {
 	private Rating rating;
 	private String pros;
 	private String cons;
+	private Long id;
 	
 	
 	public TeacherDto getTeacher() {
@@ -48,6 +49,17 @@ public class ReviewRecordDto {
 	
 	public ReviewRecordDto setCons(String cons) {
 		this.cons = cons;
+		return this;
+	}
+	
+	
+	public Long getId() {
+		return id;
+	}
+	
+	
+	public ReviewRecordDto setId(Long id) {
+		this.id = id;
 		return this;
 	}
 }
