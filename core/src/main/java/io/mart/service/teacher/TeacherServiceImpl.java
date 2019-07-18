@@ -8,7 +8,7 @@ public class TeacherServiceImpl implements TeacherService {
 	private TeacherRepository teacherRepository;
 	
 	
-	TeacherServiceImpl(TeacherRepository teacherRepository) {
+	public TeacherServiceImpl(TeacherRepository teacherRepository) {
 		this.teacherRepository = teacherRepository;
 	}
 	

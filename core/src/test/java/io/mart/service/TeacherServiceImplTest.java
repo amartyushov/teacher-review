@@ -2,6 +2,7 @@ package io.mart.service;
 
 import io.mart.model.TeacherDto;
 import io.mart.repository.TeacherRepository;
+import io.mart.service.teacher.TeacherServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
